@@ -1,5 +1,7 @@
 # THE FLOW EVENT LIBRARY
 
+<a href = "https://travis-ci.org/DavidNgugi/flow" title = "Buy Me a Coffee" target="_blank"><img src="https://travis-ci.org/DavidNgugi/flow.svg?branch=master"/></a>
+
 This is a small simple yet effective JavaScript Library that emulates the NodeJs EventEmitter. It's built for projects that require Event-driven programming techniques like simple HTML5 Canvas games etc.
 
 ## Installation in Browser
