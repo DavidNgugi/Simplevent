@@ -1,0 +1,24 @@
+{
+  "name": "event-emitter",
+  "version": "1.0.0",
+  "description": "A simple Event Emitter library for JavaScript",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidNgugi/EventEmitter.git"
+  },
+  "keywords": [
+    "EventEmitter",
+    "JavaScript",
+    "Events"
+  ],
+  "author": "David Ngugi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidNgugi/EventEmitter/issues"
+  },
+  "homepage": "https://github.com/DavidNgugi/EventEmitter#readme"
+}
