@@ -1,0 +1,30 @@
+{
+  "name": "eventflow",
+  "version": "1.0.0",
+  "description": "A simple Event Emitter library for JavaScript",
+  "main": "src/EventFlow.js",
+  "scripts": {
+    "test": "mocha --glob '*.test.js' test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidNgugi/EventFlow.git"
+  },
+  "keywords": [
+    "event emitter",
+    "event bus",
+    "emitter",
+    "javascript",
+    "events"
+  ],
+  "author": "David Ngugi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidNgugi/EventFlow/issues"
+  },
+  "homepage": "https://github.com/DavidNgugi/EventFlow#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
