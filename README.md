@@ -2,11 +2,13 @@
 
 This is a small simple yet effective JavaScript Library that emulates the NodeJs EventEmitter. It's built for projects that require Event-driven programming techniques like simple HTML5 Canvas games etc.
 
-## Installation
+## Installation in Browser
 
 For use on the browser, use `flow.min.js` found in the `dist` folder.
 
-For use in a NodeJs project:
+## Installation in NodeJs
+
+For use in a NodeJs project, instantiation is not required
 
 ``` bash
 npm install flow
@@ -19,6 +21,14 @@ FLow is simple just like any other event system and uses two main methods, on() 
 ### Adding it into your project
 
 Flow can be added as a module just like any other mordern NodeJs package
+
+When using it on the browser, `instantiate Flow first`.
+
+``` javascript
+var Flow = new Flow();
+```
+
+When using node js, just `require the module`.
 
 ``` javascript
 var Flow = require('./src/EventEmitter');
