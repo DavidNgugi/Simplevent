@@ -98,7 +98,7 @@
     // Store in window a reference to the singleton
     if (typeof window.define === 'function' && window.define.amd !== undefined) {
         window.define('EventFlow', [], function () {
-            return Jvent;
+            return EventFlow;
         });
     }
       // CommonJS
