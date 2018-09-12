@@ -35,6 +35,8 @@
                     //register event
                     this.registeredEventListeners[event].push({handler: handler, target: target});
                 }
+
+                return this;
             }
 
              /**
@@ -56,6 +58,8 @@
                 }catch(e){
                     throw new Error("Listener not turned off. " + e);
                 }
+
+                return this;
             }
 
             /**
@@ -79,6 +83,8 @@
                     // console.log("Event not fired. "+ e);
                     throw new Error("Event not dispatched. "+ e);
                 }
+
+                return this;
             };
 
             /**
@@ -99,6 +105,8 @@
             this.clear = function(){
                 this.registeredEventListeners = [];
                 this.firedEvents = [];
+
+                return this;
             };
         }
 

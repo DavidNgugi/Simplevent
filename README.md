@@ -90,6 +90,26 @@ You can clear all events
 Simplevent.clear();
 ```
 
+### Method Chaining
+
+You can chain the methods instead of writing them seperately
+
+``` javascript
+
+var result = 4;
+
+var addOne = () => { result += 1; }
+
+var multipyByThree = () => { result *= 3; }
+
+var divideByFour = () => { result /= 4; }
+
+Simplevent.on('ADD', addOne)
+        .on('MULTIPLY', multipyByThree)
+        .on('DIVIDE', divideByFour)
+        .dispatch('MULTIPLY');
+```
+
 ## Licencing
 
 Licensed using the MIT Licence and therefore free for commercial purposes;

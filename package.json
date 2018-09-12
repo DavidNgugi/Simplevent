@@ -1,6 +1,6 @@
 {
   "name": "simplevent",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple Event Emitter library for JavaScript",
   "main": "src/Simplevent.js",
   "scripts": {
