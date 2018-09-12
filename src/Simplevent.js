@@ -72,7 +72,7 @@
                     var listeners = this.getListeners(event);
                     if(!listeners || !listeners[0]) return
                     
-                    var args = listeners.slice.call(arguments, 1);
+                    var args = [].slice.call(arguments, 1);
 
                     var that = this;
                     listeners.slice().map(function(i){
