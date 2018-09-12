@@ -37,6 +37,27 @@
                 }
             }
 
+             /**
+             * Removes a listener for a given event 
+             * @param {String} event 
+             * @param {Function} handler 
+             * @returns void
+             */
+            this.off = function(event, handler) {
+                try{
+                    var listeners = this.getListeners(event);
+                    if (listeners) {
+                        var index = listeners.indexOf(event);
+                        listeners.slice().map(function(listener){
+                            if(listener.handler === handler)
+                                listeners.splice(index,1)
+                        });
+                    }
+                }catch(e){
+                    throw new Error("Listener not turned off. " + e);
+                }
+            }
+
             /**
              * Calls/Fires a registered event
              * @param {String} event 
