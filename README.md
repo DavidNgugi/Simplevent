@@ -6,14 +6,14 @@ This is a small simple yet effective JavaScript Library that emulates the NodeJs
 
 ## Installation in Browser
 
-For use on the browser, use `Simplevent.min.js` found in the `dist` folder.
+For use on the browser, use `simplevent.min.js` found in the `dist` folder.
 
 ## Installation in NodeJs
 
 For use in a NodeJs project, instantiation is not required
 
 ``` bash
-npm install Simplevent
+npm install simplevent
 ```
 
 ## Using Simplevent
@@ -33,7 +33,7 @@ var Simplevent = new Simplevent();
 When using node js, just `require the module`.
 
 ``` javascript
-var Simplevent = require('./src/Simplevent');
+var Simplevent = require('simplevent');
 ```
 
 ### Registering an event
