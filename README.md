@@ -27,13 +27,13 @@ Simplevent can be added as a module just like any other mordern NodeJs package
 When using it on the browser, `instantiate Simplevent first`.
 
 ``` javascript
-var Simplevent = new Simplevent();
+const Simplevent = new Simplevent();
 ```
 
 When using node js, just `require the module`.
 
 ``` javascript
-var Simplevent = require('simplevent');
+const Simplevent = require('simplevent');
 ```
 
 ### Registering an event
@@ -72,6 +72,14 @@ Simplevent.on('EVENT_WITH_ARGS', function(name){
 });
 
 Simplevent.dispatch('EVENT_WITH_ARGS', 'Mr. Simplevent');
+```
+
+### Turning off an event listener
+
+Use the `off()` method. 
+
+``` javascript
+Simplevent.off('SHOUT', shout);
 ```
 
 ### Clearing events

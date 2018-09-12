@@ -45,6 +45,28 @@ describe('When registering a new Event', () => {
     
 });
 
+describe('When removing an event listener', () => {
+
+    before(() => {
+        Simplevent.clear();
+    });
+
+    it("Should delete event listener from registered event listeners", done => {
+        var testEvent = 'TEST:EVENT',
+            handler = (e) => { return true },
+            target = () => {};
+
+        Simplevent.on(testEvent, handler, target);
+
+        Simplevent.off(testEvent, handler);
+
+        assert.equal(Simplevent.getListeners(testEvent).length, 0);
+        done();
+    });
+
+})
+
+
 describe('When Firing a new Event', () => {
 
     beforeEach(() => {
