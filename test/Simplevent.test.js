@@ -67,7 +67,7 @@ describe('When removing an event listener', () => {
 })
 
 
-describe('When Firing a new Event', () => {
+describe('When dispatching a new Event', () => {
 
     beforeEach(() => {
         Simplevent.clear();
@@ -94,4 +94,32 @@ describe('When Firing a new Event', () => {
 
         done();
     });
+
+    describe('When chaining methods', () => {
+        
+        before(() => {
+            Simplevent.clear();
+        });
+
+        it("should dispatch correct event", done => {
+
+            var result = 4;
+            
+            var addOne = () => { result += 1; }
+            
+            var multipyByThree = () => { result *= 3; }
+            
+            var divideByFour = () => { result /= 4; }
+            
+            Simplevent.on('ADD', addOne)
+                    .on('MULTIPLY', multipyByThree)
+                    .on('DIVIDE', divideByFour)
+                    .dispatch('MULTIPLY');
+
+            expect(result).to.eq(12);
+
+            done();
+        });
+    })
+    
 });
